@@ -43,6 +43,27 @@ export default function App() {
           Full-Stack Developer | React | Node.js | Django
         </motion.p>
       </motion.section>
+
+      {/* Projects Section */}
+      <section className="projects">
+        <h2>Projects</h2>
+        <div className="project-list">
+          {["Project 1", "Project 2"].map((project, index) => (
+            <motion.div
+              key={index}
+              className="project-card"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0}}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <h3>{project}</h3>
+              <p>Brief description of the project.</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
