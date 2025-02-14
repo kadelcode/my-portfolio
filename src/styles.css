@@ -30,3 +30,25 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+/* Skills Section */
+.skills {
+    padding: 40px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #2d1d42;
+    border-radius: 5px;
+}
+
+.skills li:first-child {
+    margin-left: 0;
+}
