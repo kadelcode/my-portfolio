@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
+import { FaReact, FaNodeJs, FaPython } from "react-icons/fa"
 import "./styles.css"
 
 export default function App() {
   const [formData, setFormData] = useState({name: "", email:"", message: "" });
+
+  // skills variable
+  const skills = [
+    { name: "React.js", icon: <FaReact />},
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Django", icon: <FaPython /> }
+  ]
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
