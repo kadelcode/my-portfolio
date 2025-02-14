@@ -12,3 +12,21 @@ body {
     padding: 50px;
     border-radius: 10px;
 }
+
+/* Project Section */
+.projects {
+    padding: 40px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.project-card {
+    background: linear-gradient(135deg, #440f49, #6e09e9);
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
