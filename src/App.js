@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import "./styles.css"
 
 function App() {
   return (
