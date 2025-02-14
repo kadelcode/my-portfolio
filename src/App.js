@@ -23,10 +23,26 @@ export default function App() {
     ).catch(
       () => alert("Failed to send message.")
     );
-  }
+  };
+
   return (
-    <motion.div initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 4}}>
-      <h1>Welcome to My Portfolio</h1>
-    </motion.div>
+    <div className="container">
+      {/* Hero Section */}
+      <motion.section
+        className="hero"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+      >
+        <h1>Hello, I'm Ayodele Kadiri</h1>
+        <motion.p
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{ duration: 1.5 }}
+        >
+          Full-Stack Developer | React | Node.js | Django
+        </motion.p>
+      </motion.section>
+    </div>
   )
 }
