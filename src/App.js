@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import { FaReact, FaNodeJs, FaPython } from "react-icons/fa"
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaJs, FaJava, FaAws, FaDatabase } from "react-icons/fa"
 import "./styles.css"
+import { FaC } from "react-icons/fa6";
 
 export default function App() {
   const [formData, setFormData] = useState({name: "", email:"", message: "" });
 
   // skills variable
   const skills = [
+    { name: "HTML", icon:<FaHtml5 />},
+    { name: "CSS", icon:<FaCss3 />},
+    { name: "JavaScript", icon:<FaJs/>},
+    { name: "C", icon:<FaC/>},
+    { name: "Java", icon:<FaJava/>},
     { name: "React.js", icon: <FaReact />},
     { name: "Node.js", icon: <FaNodeJs /> },
-    { name: "Django", icon: <FaPython /> }
+    { name: "Django", icon: <FaPython /> },
+    { name: "SQL", icon: <FaDatabase />},
+    { name: "AWS", icon: <FaAws />}
   ]
 
   const handleChange = (e) => {
@@ -48,8 +56,9 @@ export default function App() {
           animate={{ opacity: 1}}
           transition={{ duration: 1.5 }}
         >
-          Full-Stack Developer | React | Node.js | Django
+          <b>Full-Stack Software Developer</b> | React | Node.js | Django
         </motion.p>
+        <img width={320} src={ require ("./images/IMG-20230105-WA0019.jpg") } alt="Ayodele" />
       </motion.section>
 
       {/* Projects Section */}
