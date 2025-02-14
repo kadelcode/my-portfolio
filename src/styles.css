@@ -52,3 +52,35 @@ body {
 .skills li:first-child {
     margin-left: 0;
 }
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #bc12f0;
+}
+
+.contact textarea {
+    height: 200px;
+}
+
+.contact button {
+    background-color: #6e8efb;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: #a777e3;
+}
