@@ -91,6 +91,50 @@ export default function App() {
           ))}
         </ul>
       </section>
+
+      {/* Contact Section */}
+      <section className="contact">
+        <h2>Contact</h2>
+        <motion.form
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            whileFocus={{ scale: 1.05 }}
+          />
+
+          <motion.input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            whileFocus={{ scale: 1.05 }}
+          />
+
+          <motion.textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            whileFocus={{ scale: 1.05 }}
+          />
+
+          <motion.button
+            type="submit"
+            whileHover={{ scale: 1.1 }}
+          >Send Message</motion.button>
+        </motion.form>
+      </section>
     </div>
   )
 }
