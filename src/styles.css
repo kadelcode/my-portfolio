@@ -4,3 +4,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
