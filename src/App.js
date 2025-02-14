@@ -72,6 +72,25 @@ export default function App() {
           ))}
         </div>
       </section>
+
+      {/* Skills Section */}
+      <section className="skills">
+        <h2>Skills</h2>
+        <ul>
+          {skills.map((skill, index) => (
+            <motion.li
+              key={index}
+              className="skill-item"
+              whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              {skill.icon} {skill.name}
+            </motion.li>
+          ))}
+        </ul>
+      </section>
     </div>
   )
 }
